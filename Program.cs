@@ -22,11 +22,11 @@ namespace Assignment3_1_Cleanup
 
             //Assignment 3_1 Part 3
             Console.WriteLine("Character Counter!");
-            Console.WriteLine("Enter a string of characters:");
+            Console.WriteLine("Enter a sentence with spaces:");
             string stringOfCharacters = Console.ReadLine();
-            Console.WriteLine("What character are you looking for?");
-            char characterPicked = char.Parse(Console.ReadLine());
-            CountSpaceMethod.CountedSpaces(0, "daasd dsasd", ' ');
+            int charCount = CountSpaceMethod.CountedSpaces(stringOfCharacters);
+            Console.WriteLine($"The number of spaces in the string is : {charCount}");
+            
 
             //Assignment 3_1 Part 4
 

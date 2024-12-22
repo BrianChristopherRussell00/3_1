@@ -8,20 +8,17 @@ namespace Assignment3_1_Cleanup
 {
     public class CountSpaceMethod
     {
-        public string stringOfCharacters { get; set; }
+     
 
-        public char characterPicked { get; set; }
-
-        public static void CountedSpaces(int counter, string stringOfCharacters, char characterPicked)
+        public static int CountedSpaces(string input)
         {
-            counter = 0;
+            int counter = 0;
 
-            for (int i = 0; i > stringOfCharacters.Length - 1; i++)
+            foreach (char c in input)
             {
-                if (characterPicked == ' ') {  counter++; }
+                if (c == ' ') {  counter++; }
             }
-            counter++;
-            Console.WriteLine($"The number of spaces in the string {stringOfCharacters} is: {counter++}");
+           return counter;
 
         }
 
